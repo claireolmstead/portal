@@ -1,0 +1,13 @@
+@mixin rounded_corner{
+	-webkit-border-radius: $round;
+	border-radius: $round;
+}
+
+@mixin standard_pad{
+	padding: 1%;
+}
+
+@mixin make_width{
+	max-width: 80%;
+	margin: 0 auto;
+}

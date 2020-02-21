@@ -1,0 +1,48 @@
+body{
+	background: $bg-color;
+	@include make_width;
+}
+header{
+	h1{
+		text-align: center;
+		font-style: $headfont;
+	}
+}
+
+main{
+	font-style: $basefont;
+}
+nav{
+	@include rounded_corner;
+	@include make_width;
+	padding: 7px;
+	text-align: center;
+	background: $section-color;
+	ul{
+		margin-left: -40px;
+		li{
+			list-style: none;
+			display: inline-block;
+			padding-right: 20px;
+			a{
+				text-decoration: none;
+				padding: 10px;
+
+			}
+			a:link, a:visited{
+				color: black;
+			}
+			a:hover, a:active{
+				background: black;
+				color: white;
+				border-radius: 15px;
+			}
+		}
+	}
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-left: 1%;
+}
