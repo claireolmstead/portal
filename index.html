@@ -1,3 +1,12 @@
+<!--
+To run new program:
+  sudo npm install gulp-cli -g
+  npm install init -y
+  npm install --save-dev gulp gulp-sass browser-sync
+  gulp -v to double check version
+
+  gulp watch to run
+-->
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -13,6 +22,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -23,25 +33,54 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <div>
   <header>
-    <h1>VCO</h1>
-    <h2>Creatice Web Development</h2>
+    <h1 data-aos="flip-down" data-aos-delay="700">VCO</h1>
+    <h2>Creative Web Development</h2>
   </header>
-  <main>
-    <nav>
-      <ul>
-        <li><a href="bash-me.html">bash-me.html</a></li>
-        <li><a href="http://creative.colorado.edu/~viol5229/dev/commitment/">commitment</a></li>
-        <li><a href="https://github.com/viol5229">My GitHub</a></li>
-        <li><a href="http://creative.colorado.edu/~viol5229/dev/exquisiteCorpse/">Exquisite Corpse</a></li>
+  <nav>
+    <ul>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+  <h2 id="name">Virginia Claire Olmstead</h2>
+  <main class="container">
+    <div id="main">
+      <section id="Portfolio">
+        <h3>Portfolio</h3>
+        <ul>
+          <li id="github" data-aos="fade-left"><a href="https://github.com/viol5229" target="_blank">GitHub</a></li>
+          <li data-aos="fade-left"><a href="bash-me.html" target="_blank">Bash Me</a></li>
+          <li data-aos="fade-left"><a href="http://creative.colorado.edu/~viol5229/dev/commitment/" target="_blank">Commitment</a></li>
+          <li data-aos="fade-left"><a href="http://creative.colorado.edu/~viol5229/dev/exquisiteCorpse/" target="_blank">Exquisite Corpse</a></li>
+          <li data-aos="fade-left"><a href="https://github.com/viol5229/custom_boilerplate" target="_blank">Custom Boilerplate</a></li>
+          <li data-aos="fade-left"><a href="http://creative.colorado.edu/~viol5229/dev/aframeDemo/" target="_blank">AFrame VR Demo</a></li>
+          <li data-aos="fade-left"><a href="https://creative.colorado.edu/~viol5229/dev/parralaxNarrative/" target="_blank">Parallax Narrative</a></li>
+          <li data-aos="fade-left"><a href="http://creative.colorado.edu/~viol5229/dev/aframeProject/" target="_blank">AFrame VR Project</a></li>
+          <li data-aos="fade-left"><a href="https://creative.colorado.edu/~viol5229/dev/final/" target="_blank">Parallax Narrative</a></li>
       </ul>
-    </nav>
+      </section>
+    </div>
   </main>
+  </div>
+  <section id="Contact">
+    <h3>Contact</h3>
+    <div id="links">
+      <a href="mailto:virginia.olmstead@colorado.edu"><b>Email:</b>   virginia.olmstead@colorado.edu</a><br>
+      <a href="https://www.linkedin.com/in/virginia-claire-olmstead-76079a155/" target="_blank"><b>LinkedIn:</b> Virgina Claire Olmstead</a><br>
+      <a href="https://www.instagram.com/vco_create/" target="_blank"><b>Instagram:</b> @vco_create</a>
+    </div>
+  </section>
   <footer>
     <p>Created By Claire Olmstead</p>
   </footer>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>

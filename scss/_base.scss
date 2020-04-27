@@ -1,48 +1,176 @@
 body{
-	background: $bg-color;
-	@include make_width;
+	font-family: $basefont;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 header{
+	text-align: left;
+	padding: 2%;
+  background-color: $light_grey;
 	h1{
-		text-align: center;
-		font-style: $headfont;
+		font-family: $headfont;
+		font-size: 3vw;
+		text-shadow: 5px 5px $reg_grey;
+		@include margin_reset;
+    position: fixed;
+	}
+	h2{
+		font-size: 1.9vw;
+    padding-top: 30px;
 	}
 }
-
-main{
-	font-style: $basefont;
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
 }
 nav{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: $light_grey;
 	@include rounded_corner;
-	@include make_width;
-	padding: 7px;
+	padding: 0.75vw;
 	text-align: center;
-	background: $section-color;
 	ul{
 		margin-left: -40px;
 		li{
-			list-style: none;
 			display: inline-block;
 			padding-right: 20px;
+			text-decoration: underline;
+      font-size: 1.5vw;
 			a{
-				text-decoration: none;
 				padding: 10px;
-
 			}
 			a:link, a:visited{
 				color: black;
 			}
 			a:hover, a:active{
-				background: black;
+				background-color: $dark_grey;
 				color: white;
 				border-radius: 15px;
 			}
 		}
 	}
 }
+section{
+  max-width: 90%;
+  margin: 0 auto;
+	ul{
+		font-family: $headfont;
+		li{
+      font-size: 4vw;
+			box-shadow: -7px 7px;
+			margin-bottom: 20px;
+		}
+		li:hover{
+				background-color: $light_grey;
+		}
+    li#github{
+      box-shadow: -7px 7px $dark_grey;
+    }
+    li#github a{
+      color: $dark_grey;
+    }
+	}
+}
+#Contact{
+	width: 94vw;
+	padding: 1vw 3vw 3vw 3vw;
+	margin: 40px 0 40px 0;
+	background-color: black;
+	color: white;
+}
+#Contact a{
+	color: white;
+}
+#Contact a:hover{
+	font-size: 1.9vw;
+}
+#links{
+  padding: 0 3% 0 3%;
+  font-size: 1.7vw;
+}
+section h3{
+  font-size: 2.25vw;
+}
 footer{
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	padding-left: 1%;
+  font-size: 1.3vw;
+}
+@media screen and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+  header{
+    h1 {
+      font-size: 7vw;
+    }
+    h2{
+      font-size: 3vw;
+    }
+  }
+  nav {
+    padding: 0.75vw;
+    ul {
+      li {
+        font-size: 3vw;
+      }
+    }
+  }
+  section{
+    ul{
+      li{
+        box-shadow: -4px 4px;
+      }
+      li#github{
+        box-shadow: -4px 4px $dark_grey;
+      }
+    }
+  }
+  #Contact a:hover {
+   font-size: 3.2vw;
+  }
+  #links {
+    padding: 0 3% 0 3%;
+    font-size: 3vw;
+  }
+  section h3 {
+    font-size: 3vw;
+  }
+  footer {
+    font-size: 2.2vw;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 900px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+  header{
+    h1 {
+      font-size: 5vw;
+    }
+    h2{
+      font-size: 3vw;
+    }
+  }
+  nav {
+    padding: 0.75vw;
+    ul {
+      li {
+        font-size: 3vw;
+      }
+    }
+  }
+  #Contact a:hover {
+    font-size: 2.9vw;
+  }
+  #links {
+    padding: 0 3% 0 3%;
+    font-size: 2.7vw;
+  }
+  section h3 {
+    font-size: 3vw;
+  }
+  footer {
+    font-size: 2.2vw;
+  }
 }

@@ -11,6 +11,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "init": "^0.1.2"
   }
 }

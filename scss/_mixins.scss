@@ -6,8 +6,12 @@
 @mixin standard_pad{
 	padding: 1%;
 }
-
-@mixin make_width{
-	max-width: 80%;
-	margin: 0 auto;
+@mixin margin_reset{
+	margin: 0;
+	padding: 0;
+}
+@mixin center_image{
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: 50% 50%;
 }
